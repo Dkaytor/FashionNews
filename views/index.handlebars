@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" >
+		<script src="/assets/js/app.js"></script>
+
+		
+	</head>
+
+	
+		<ul>
+			<!-- Cycles through each burger like a for loop -->
+			{{#each articles}}
+			<p class="title">{{this.title}}</p>
+			<p class="link">{{this.link}}</p>
+			<br>
+			
+			{{/each}}
+
+		</ul>
+	

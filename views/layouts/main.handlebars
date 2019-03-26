@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+	<script src="/assets/js/app.js"></script>	
+	</head>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="navbar-brand">News with Style</div>
+          <button class="navbar-toggler" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">                     
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button type="submit" class="scrape-new" href="/" data-id={{id}}>SCRAPE NEW ARTICLES!</button>
+              </li>
+             </ul>
+          </div>
+        </nav>
+		<div class="jumbotron">
+        <hr>
+        <h2><strong>Fashion Scraper </strong></h2>
+        <h2><strong>Keep notes on your favorite articles!</strong></h2>
+        <br>
+  
+      </div>
+		<body>
+
+
+		{{{ body }}}
+
+	</body>
+</html>

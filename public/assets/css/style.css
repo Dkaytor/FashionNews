@@ -1,5 +1,24 @@
-
-      body { background-color: #F2F6D0 }
+      .navbar-brand {
+        text-emphasis-style: white;
+        color: lightcoral;
+      }
+    .jumbotron {
+      background-image: url("/assets/wall.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: lightcoral;
+      text-align: center;
+    }     
+    .title {
+      height: 24px;
+      font-size: 24px;
+      font-style: italic;
+    }
+    .link {
+      height: 24px;
+      font-size: 20px;
+      color: darkblue;
+    }
       #wrapper {
         width: 960px;
         margin-left: auto;
