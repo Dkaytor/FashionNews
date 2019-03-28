@@ -62,6 +62,7 @@ router.get("/scrape", function(req, res) {
         .then(function(dbArticle) {
           // View the added result in the console
           console.log(dbArticle);
+          
         })
         .catch(function(err) {
           // If an error occurred, log it
@@ -80,7 +81,6 @@ router.get("/articles/:id", function(req, res) {
     .then(function(dbArticle) {
       // If we were able to successfully find an Article with the given id, send it back to the client
       res.json(dbArticle);
-      console.log("id " + _id);
     })
     .catch(function(err) {
       // If an error occurred, send it to the client
@@ -89,7 +89,7 @@ router.get("/articles/:id", function(req, res) {
 });
 
 // Route for grabbing a specific Article by id, populate it with it's note
-router.get("/:id", function(req, res) {
+router.post("/articles2/:id", function(req, res) {
   db.Article.findById(req.params.id)
   .populate("note")
   .then(function(dbArticle) {
@@ -101,16 +101,16 @@ router.get("/:id", function(req, res) {
   
 });
 
-// Route for saving/updating an Article's associated Note
-router.post("/articles/:id", function(req, res) {
-    db.Note.create(req.body)
-    .then(function(dbNote) {
-      return db.Article.findByIdAndUpdate(req.params.id, { $push: {note: dbNote._id}},
-        {new: true})
+//// Route for saving/updating an Article's associated Note
+//router.post("/articles2/:id", function(req, res) {
+  //  db.Note.create(req.body)
+    //.then(function(dbNote) {
+      //return db.Article.findByIdAndUpdate(req.params.id, { $push: {note: dbNote._id}},
+        //{new: true})
         
-    });
+    //});
 
-  });
+  //});
 
 
 

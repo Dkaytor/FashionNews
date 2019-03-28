@@ -10,12 +10,12 @@
       text-align: center;
     }     
     .title {
-      height: 24px;
-      font-size: 24px;
+      height: 30px;
+      font-size: 20px;
       font-style: italic;
     }
     .link {
-      height: 24px;
+      height: 50px;
       font-size: 20px;
       color: darkblue;
     }
@@ -24,6 +24,13 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
+      }
+      h1 {
+        background-color: lightslategray;
+        height: 10px;
+      }
+      h2 {
+        text-align: center;
       }
       #articles {
         display: inline-block;
@@ -34,11 +41,12 @@
       #notes {
         float: right;
         width: 30%;
+        padding-right: 10px;
       }
       textarea, input {
         display: block;
         width: 100%;
-        background-color: #FCF5C7;
+        background-color: lavenderblush;
       }
       input {
         height: 36px;
@@ -47,5 +55,13 @@
       textarea {
         height: 200px;
         font-size: 18px;
+      }
+      .post-note, .seeNote {
+        height: 25px;
+        font-size: 18px;
+        float: right;
+      }
+      button {
+        margin-left: 20px;
       }
     
